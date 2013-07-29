@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Alfonso Developer]]></title>
+  <title><![CDATA[Alfonso Miranda]]></title>
   <link href="http://alfonsomiranda.github.io/atom.xml" rel="self"/>
   <link href="http://alfonsomiranda.github.io/"/>
-  <updated>2013-07-29T10:01:09+02:00</updated>
+  <updated>2013-07-29T10:38:56+02:00</updated>
   <id>http://alfonsomiranda.github.io/</id>
   <author>
     <name><![CDATA[Alfonso Miranda Castro]]></name>
