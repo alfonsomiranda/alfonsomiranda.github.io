@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://alfonsomiranda.github.io/sitemap.xml 
