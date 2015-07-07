@@ -4,7 +4,7 @@
   <title><![CDATA[Alfonso Miranda]]></title>
   <link href="http://alfonsomiranda.github.io/atom.xml" rel="self"/>
   <link href="http://alfonsomiranda.github.io/"/>
-  <updated>2015-07-07T19:43:44+02:00</updated>
+  <updated>2015-07-07T19:46:11+02:00</updated>
   <id>http://alfonsomiranda.github.io/</id>
   <author>
     <name><![CDATA[Alfonso Miranda Castro]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome]]></title>
+    <link href="http://alfonsomiranda.github.io/blog/2015/07/07/welcome/"/>
+    <updated>2015-07-07T19:45:59+02:00</updated>
+    <id>http://alfonsomiranda.github.io/blog/2015/07/07/welcome</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
