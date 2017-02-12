@@ -15,6 +15,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <style type="text/css">
+    html { 
+  		/*background: url(background.jpg) no-repeat center center fixed; */
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  background-color: #FFFFFF
+	}
   	body {
   		width:80%;
   		padding: 40px;
@@ -38,20 +46,20 @@
       font-weight: normal;
       text-decoration: none;
     }
-    .apps {
-      float: left;
-    }
-    .col-fixed {
-      margin-right: 10px;
-      margin-bottom: 10px;
-      width:100px;
-      float: left;
+    .content {
+    	background-color: rgba(0, 0, 0, 0.1);
+    	padding: 10px;
+    	box-sizing: border-box;
+    	position: absolute;
+  		top: 20%;
+  		left: 20%;
+  		transform: translate(-20%, -20%);
     }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="content">
         <div>
           <p>Hi, my name is <strong>Alfonso Miranda</strong> and I live in Madrid, Spain.</p>
           <p>I always liked to develop software, even when I did not know what that meant. I started playing with my Spectrum in BASIC when I was 11 years old and I haven't stopped until today.<p>
