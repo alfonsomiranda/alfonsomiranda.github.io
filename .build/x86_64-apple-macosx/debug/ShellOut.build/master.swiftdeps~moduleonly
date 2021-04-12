@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "f235676cc83e18dcf35d36cd7b956af9"
+build_time: [1618219267, 935476000]
+inputs:
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/shellout/Sources/ShellOut.swift": [1618219263, 38738913]

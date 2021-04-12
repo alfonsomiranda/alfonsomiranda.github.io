@@ -1,0 +1,107 @@
+{
+  "": {
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/master.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/BlogDateFormatter.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/BlogDateFormatter.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/BlogDateFormatter.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/BlogDateFormatter~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/BlogDateFormatter.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/BlogHTMLFactory.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/BlogHTMLFactory.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/BlogHTMLFactory.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/BlogHTMLFactory~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/BlogHTMLFactory.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Footer.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Footer.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Footer.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Footer~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Footer.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Grid.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Grid.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Grid.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Grid~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Grid.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Head.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Head.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Head.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Head~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Head.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Header.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Header.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Header.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Header~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Header.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Icon.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Icon.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Icon.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Icon~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Icon.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Page.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Page.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Page.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Page~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Page.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+PageContent.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+PageContent.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+PageContent.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+PageContent~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+PageContent.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Post.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Post.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Post.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Post~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Post.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+PostExcerpt.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+PostExcerpt.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+PostExcerpt.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+PostExcerpt~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+PostExcerpt.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Posts.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Posts.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Posts.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Posts~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Posts.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Sidebar.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Sidebar.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Sidebar.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Sidebar~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+Sidebar.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+TagList.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+TagList.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+TagList.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+TagList~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Nodes/Node+TagList.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Theme+Blog.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Theme+Blog.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Theme+Blog.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Theme+Blog~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/BlogTheme/Theme+Blog.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/SocialMediaLink.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/SocialMediaLink.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/SocialMediaLink.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/SocialMediaLink~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/SocialMediaLink.swiftdeps"
+  },
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/main.swift": {
+    "dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/main.d",
+    "object": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/main.swift.o",
+    "swiftmodule": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/AlfonsomirandaCom.build/main.swiftdeps"
+  }
+}

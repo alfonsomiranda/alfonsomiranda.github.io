@@ -1,0 +1,4 @@
+module Ink {
+    header "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/x86_64-apple-macosx/debug/Ink.build/Ink-Swift.h"
+    requires objc
+}

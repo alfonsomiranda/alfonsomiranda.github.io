@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "f81a93e8af403f49ec94cd7e51a0d1b0"
+build_time: [1618230587, 267373000]
+inputs:
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/BlogDateFormatter.swift": [1592887668, 0]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/BlogHTMLFactory.swift": [1618169667, 410372972]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Footer.swift": [1618157763, 300086975]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Grid.swift": [1592887668, 0]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Head.swift": [1618157841, 599818110]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Header.swift": [1618221842, 295262193]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Icon.swift": [1592887668, 0]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Page.swift": [1618157890, 996405482]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+PageContent.swift": [1592887668, 0]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Post.swift": [1618168376, 872869849]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+PostExcerpt.swift": [1618168472, 430572152]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Posts.swift": [1618157848, 853264689]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+Sidebar.swift": [1618160578, 443464637]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Nodes/Node+TagList.swift": [1618157796, 940202951]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/Theme+Blog.swift": [1618158340, 716894746]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/SocialMediaLink.swift": [1618160080, 403578639]
+  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/main.swift": [1618229789, 417662651]
