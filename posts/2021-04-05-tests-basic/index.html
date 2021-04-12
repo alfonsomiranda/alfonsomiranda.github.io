@@ -18,7 +18,7 @@
         
         <span class="call">XCTAssertEqual</span>(viewController.<span class="property">titleLabel</span>.<span class="property">text</span>!, <span class="string">"Welcome"</span>)
     }
-</code></pre><p>Aquí lo único que hacemos es cargar el ViewController y comprobar que el texto que hay en el titleLabel es “Welcome”. Si ejecutamos <code>CMD + U</code> vemos que pasa el test sin problemas. Fácil, ¿no?</p><p>Seguimos y ahora añadimos en el Storyboard un label que enlazamos en el ViewController y en el viewDidLoad le asignamos un texto.</p><pre><code><span class="keyword">import</span> UIKit
+</code></pre><p>Aquí lo único que hacemos es cargar el ViewController y comprobar que el texto que hay en el titleLabel es “Welcome”. Si ejecutamos <code>CMD + U</code> vemos que pasa el test sin problemas. Fácil, ¿no?</p><p>Seguimos y ahora añadimos en el Storyboard un label que enlazamos en el <code>ViewController</code> y en el viewDidLoad le asignamos un texto.</p><pre><code><span class="keyword">import</span> UIKit
 
 <span class="keyword">class</span> ViewController: <span class="type">UIViewController</span> {
     
