@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="es"><head><title>Alfonso Miranda - Mobile Software Engineer</title><meta name="twitter:title" content="Alfonso Miranda - Mobile Software Engineer"/><meta name="og:title" content="Alfonso Miranda - Mobile Software Engineer"/><meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"/><link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css"/><link rel="stylesheet" href="/Pure/styles.css"/><link rel="stylesheet" href="/all.css"/></head><body><div id="layout" class="pure-g"><div><div class="pure-menu pure-menu-horizontal pure-u-1-1 top-header"><ul class="pure-menu-list"><li class="pure-menu-item"><a class="pure-menu-link" href="/about">Sobre mi</a></li></ul></div></div><div class="sidebar pure-u-1 pure-u-md-1-4"><div class="header"><div id="layout" class="pure-g"><div class="pure-u-md-1-1 pure-u-3-4"><h1><a class="brand-title" href="/">Alfonso Miranda</a></h1><h3 class="brand-tagline">Mobile Software Engineer</h3></div></div><div id="layout" class="pure-g"><div class="pure-u-md-1-1"><a href="https://www.linkedin.com/in/alfonsomirandacastro/"><i class="fab fa-linkedin l-box social-icon"></i><a class="social-media" href="https://www.linkedin.com/in/alfonsomirandacastro/">LinkedIn</a></a></div><div class="pure-u-md-1-1"><a href="https://github.com/alfonsomiranda"><i class="fab fa-github-square l-box social-icon"></i><a class="social-media" href="https://github.com/alfonsomiranda">GitHub</a></a></div><div class="pure-u-md-1-1"><a href="https://twitter.com/alfonsobeta"><i class="fab fa-twitter-square l-box social-icon"></i><a class="social-media" href="https://twitter.com/alfonsobeta">Twitter</a></a></div><div class="pure-u-md-1-1"><a href="https://www.twitch.tv/alfonsomiranda"><i class="fab fa-twitch l-box social-icon"></i><a class="social-media" href="https://www.twitch.tv/alfonsomiranda">Twitch</a></a></div></div></div></div><div class="content pure-u-1 pure-u-md-3-5 pure-u-xl-6-10"><h2 class="post-title"><a href="/posts/2021-04-12-tdd">TDD en Swift con Clean Architecture</a></h2><p class="post-meta">12 de abril de 2021</p><div class="post-tags"><a class="post-category post-category-test" href="/tags/test">test</a><a class="post-category post-category-swift" href="/tags/swift">swift</a><a class="post-category post-category-tdd" href="/tags/tdd">tdd</a><a class="post-category post-category-ios" href="/tags/ios">iOS</a></div><div class="post-description"><div><p>TDD, Test Driven Development o Desarrollo guiado por pruebas es una forma o práctica de desarrollo donde, a muy grandes rasgos, se escriben las pruebas y a partir de ella se va implementando el código. La forma de hacer esto es ir creando las pruebas, que estas vayan fallando e ir arreglándolas refactorizando y creando el código necesario.</p><p>Estas pruebas suelen ser tests unitarios, y cómo ya vimos en el <a href="https://alfonsomiranda.com/posts/2021-04-05-tests-basic/">anterior artículo</a>, es algo bastante sencillo y necesario.</p><h1>Ventajas</h1><ul><li><strong>No se nos olvida hacer los tests</strong>. Esta es la razón más obvia. Una de las excusas más usada para hacer tests es el tiempo que conllevan y, como lo dejamos para el final, no nos termina de encajar en el deadline que tengamos en el proyecto, además de quizás darnos mucha pereza hacerlo. Con esta metodología, cuando acabamos la implementación ya tenemos los tests hechos y con el deber de buen desarrollador cumplido.</li><li><strong>Evitamos código innecesario</strong>. Como veremos más adelante, TDD es algo más que escribir primero los tests, si no que implica una fase de refactorización que nos ayuda a eliminar todo código repetitivo o innecesario.</li><li><strong>Documentación</strong>. Para hacer los tests primero tenemos que tener muy claro las funcionalidades que queremos desarrollar, y es necesario tener una buena definición de requisitos y casos de uso, y los propios tests se convierte en una buena documentación de nuestro código.</li><li><strong>Escalabilidad</strong>. Al partir de los tests, el código final implementado tiene mucha más facilidad para que sea desarrollado cumpliendo ciertas reglas de <code>clean architecture</code>, lo cual va a proporcionar que nuestro código sea fácilmente escalable.</li></ul><h1>Casos prácticos.</h1><p>Vamos a ver cómo se puede hacer esta práctica en Swift, y para ello vamos a partir del <a href="https://medium.com/r/?url=https%3A%2F%2Fgithub.com%2Falfonsomiranda%2FTesting-in-swift%2Ftree%2Fbasic%2FTestingBasic%2FTestingBasic">código</a> que usamos previamente para conocer los tests.</p><p>Empezamos por algo muy simple, aprovechando el código que ya tenemos. En el <code>ViewController</code> vamos a necesitar un método que nos concatene dos cadenas para los dos textfields que hay en la pantalla. Imaginad que no lo habíamos resuelto en el método <code>composeFullNameAction</code>, si no que lo haremos en otro método. Este método tendría como parámetros de entrada dos cadenas y devolvería otro <code>String</code>. En el <code>ViewController</code> creamos un método con esta definición pero sin ninguna implementación (solo devolviendo una cadena vacía para que no falle).</p><pre><code><span class="keyword">func</span> concatenate(first: <span class="type">String</span>, second: <span class="type">String</span>) -&gt; <span class="type">String</span> {
+    <span class="keyword">return</span> <span class="string">""</span>
+}
+</code></pre><p>Ahora nos vamos al target de tests y añadimos un nuevo tests. Este test debe de comprobar si el método <code>concatenate</code> al pasarle dos cadenas devuelve la concatenación de ambas con la primera letra en mayúscula.</p><pre><code><span class="keyword">func</span> test_concatenate_two_strings() {
+    <span class="keyword">let</span> viewController = <span class="type">ViewController</span>()
+    
+    <span class="call">XCTAssertEqual</span>(viewController.<span class="call">concatenate</span>(first: <span class="string">"alfonso"</span>, second: <span class="string">"miranda"</span>), <span class="string">"Alfonso Miranda"</span>)
+}
+</code></pre><p>Si ejecutamos este test obtenemos un error, obviamente, al no estar la implementación hecha. Esta fase de TDD se la conoce como <code>red</code>, fase roja donde estamos pensando qué queremos desarrollar y definiéndolo.</p><img src="/images/tdd/tddRedState.png" alt="TDD Red state" width="800"/><p>En este momento tenemos que ir a la implementación y darle una solución para que nuestro tests fase. Nuestro método quedaría como sigue.</p><pre><code><span class="keyword">func</span> concatenate(first: <span class="type">String</span>, second: <span class="type">String</span>) -&gt; <span class="type">String</span> {
+    <span class="keyword">return</span> first.<span class="property">capitalized</span> + <span class="string">" "</span> + second.<span class="property">capitalized</span>
+}
+</code></pre><p>Y si ahora compilamos los tests vemos que lo pasa. Esta fase se la conoce como fase <code>green</code>, que consiste en, sea como sea, que nuestros tests pasen y estén en verde.</p><img src="/images/tdd/tddGreenState.png" alt="TDD Green state" width="800"/><p>Este "sea como sea" lo digo porque en esta fase no es necesario que nuestro código sea perfecto, simplemente que cumpla nuestros requisitos. En TDD hay una tercera fase, que es la de refactorizar. Una vez pasado el test y tenerlo en verde, tenemos que hacer el código lo más limpio posible. En nuestro caso, al ser tan simple no es necesario refactorizar, pero en casos más complejos no vamos a escribir el código bien a la primera, e incluso TDD nos recomienda primero solucionar la implementación y después hacer todas las correcciones necesarias.</p><p>Podemos ver este ciclo en esta gráfica.</p><img src="/images/tdd/test-driven-development.png" alt="TDD States" width="800"/><p>Aunque me gusta más esta imagen de <a href="https://quii.gitbook.io/learn-go-with-tests/">Denise</a>, mucho más descriptiva.</p><img src="/images/tdd/red-green-blue-gophers-smaller.png" alt="TDD Gophers" width="800"/><p>La filosofía de TDD es básicamente estos tres estados y lo podemos aplicar a cualquier funcionalidad de nuestra aplicación.</p><p>Podemos verlo con un ejemplo más complejo, y de camino vemos como hacer testing con nuestra arquitectura limpia donde nos comunicamos desacoplando las capas a base de protocolos.</p><p>Si recordamos, en el proyecto teniamos un provider en el que habíamos implementado un método que nos obtenía una película de un endpoint que habíamos definido. Ahora vamos a necesitar obtener un listado de películas que nos proporciona otro endpoint, así que la funcionalidad que queremos desarrollar es un método que nos devuelva un array de <code>MovieEntity</code>. En MovieProvider definimos un nuevo método tal que así:</p><pre><code><span class="keyword">func</span> getMovies(success: <span class="keyword">@escaping</span>([<span class="type">MovieEntity</span>]) -&gt; <span class="type">Void</span>, failure: <span class="keyword">@escaping</span>(<span class="type">EError</span>) -&gt; <span class="type">Void</span>) {
+    
+}
+</code></pre><p>Nos vamos a nuestra clase de tests y añadimos uno nuevo que cumpla los requisitos que nos hemos impuesto. Para ello vemos que nos falta poder mockear el BaseProvider ya que, como vimos en el artículo anterior, todo lo que sea "externo" a lo que queremos probar lo tenemos que falsear. Pero si vemos como es nuestro BaseProvider, nos falta añadirle un protocolo para poder mockearlo correctamente. Además, como veremos más adelante, va a perder el sentido de ser Base, y lo vamos a utilizar más como un componente (necesario para poder testear donde se usa), así que lo modificamos así.</p><pre><code><span class="keyword">protocol</span> ProviderProtocol {
+    <span class="keyword">func</span> request&lt;T: <span class="type">Decodable</span>&gt;(entityClass: <span class="type">T</span>.<span class="type">Type</span>, endpoint: <span class="type">String</span>, method: <span class="type">HTTPMethod</span>, success: <span class="keyword">@escaping</span>(<span class="keyword">_</span> entity: <span class="type">T</span>) -&gt; <span class="type">Void</span>, failure: <span class="keyword">@escaping</span>(<span class="type">EError</span>) -&gt; <span class="type">Void</span>)
+}
+
+
+<span class="keyword">class</span> Provider: <span class="type">ProviderProtocol</span> {
+    <span class="keyword">func</span> request&lt;T: <span class="type">Decodable</span>&gt;(entityClass: <span class="type">T</span>.<span class="type">Type</span>, endpoint: <span class="type">String</span>, method: <span class="type">HTTPMethod</span>, success: <span class="keyword">@escaping</span>(<span class="keyword">_</span> entity: <span class="type">T</span>) -&gt; <span class="type">Void</span>, failure: <span class="keyword">@escaping</span>(<span class="type">EError</span>) -&gt; <span class="type">Void</span>) {
+        <span class="keyword">let</span> session = <span class="type">URLSession</span>(configuration: .<span class="dotAccess">default</span>, delegate: <span class="keyword">nil</span>, delegateQueue: .<span class="dotAccess">main</span>)
+        <span class="keyword">let</span> url = <span class="type">URL</span>(string: endpoint)!
+        <span class="keyword">let</span> task = session.<span class="call">dataTask</span>(with: url, completionHandler: { (data: <span class="type">Data</span>?, response: <span class="type">URLResponse</span>?, error: <span class="type">Error</span>?) -&gt; <span class="type">Void</span> <span class="keyword">in
+            
+            guard</span> error == <span class="keyword">nil else</span> {
+                <span class="call">failure</span>(<span class="type">EError</span>(domain: endpoint, code: <span class="number">0</span>, localizedDescription: error?.<span class="property">localizedDescription</span> ?? <span class="string">""</span>))
+                <span class="keyword">return</span>
+            }
+            <span class="keyword">guard let</span> responseData = data <span class="keyword">else</span> {
+                <span class="call">failure</span>(<span class="type">EError</span>(domain: <span class="string">""</span>, code: -<span class="number">1</span>, localizedDescription: <span class="string">""</span>))
+                <span class="keyword">return</span>
+            }
+            <span class="keyword">do</span> {
+                <span class="keyword">if let</span> response = <span class="keyword">try</span>? <span class="type">JSONDecoder</span>().<span class="call">decode</span>(<span class="type">T</span>.<span class="keyword">self</span>, from: responseData) {
+                    <span class="call">success</span>(response)
+                } <span class="keyword">else</span> {
+                    <span class="call">failure</span>(<span class="type">EError</span>(domain: <span class="string">""</span>, code: -<span class="number">1</span>, localizedDescription: <span class="string">""</span>))
+                }
+            }
+        })
+        task.<span class="call">resume</span>()
+    }
+}
+
+</code></pre><p>Y modificamos nuestro MovieProvider de forma que podamos inyectarle ese Provider y no heredar de él, porque como comentáamos antes el testeo se hace muy complicado. El resultado sería el siguiente.</p><pre><code><span class="keyword">import</span> Foundation
+
+<span class="keyword">protocol</span> MovieProvider {
+    <span class="keyword">func</span> getMovie(success: <span class="keyword">@escaping</span>(<span class="type">MovieEntity</span>) -&gt; <span class="type">Void</span>, failure: <span class="keyword">@escaping</span>(<span class="type">EError</span>) -&gt; <span class="type">Void</span>)
+}
+
+<span class="keyword">class</span> MovieProviderImplementation: <span class="type">MovieProvider</span> {
+    
+    <span class="keyword">var</span> provider: <span class="type">ProviderProtocol</span> = <span class="type">Provider</span>()
+    
+    <span class="keyword">func</span> getMovie(success: <span class="keyword">@escaping</span>(<span class="type">MovieEntity</span>) -&gt; <span class="type">Void</span>, failure: <span class="keyword">@escaping</span>(<span class="type">EError</span>) -&gt; <span class="type">Void</span>) {
+        provider.<span class="call">request</span>(entityClass: <span class="type">MovieEntity</span>.<span class="keyword">self</span>, endpoint: <span class="string">"http://demo8628160.mockable.io/movie"</span>, method: .<span class="dotAccess">get</span>, success: { (entity) <span class="keyword">in</span>
+            <span class="call">success</span>(entity)
+        }) { (error) <span class="keyword">in</span>
+            <span class="call">failure</span>(error)
+        }
+    }
+    
+    <span class="keyword">func</span> getMovies(success: <span class="keyword">@escaping</span>([<span class="type">MovieEntity</span>]) -&gt; <span class="type">Void</span>, failure: <span class="keyword">@escaping</span>(<span class="type">EError</span>) -&gt; <span class="type">Void</span>) {
+        
+    }
+}
+</code></pre><p>Ahora si podemos crearnos ese mock y quedaría de la siguiente forma.</p><pre><code><span class="keyword">import</span> Foundation
+<span class="keyword">@testable import</span> TestingBasic
+
+<span class="keyword">class</span> ProviderMock: <span class="type">ProviderProtocol</span> {
+    <span class="keyword">var</span> isRequestCalled = <span class="keyword">false
+    var</span> isSuccess = <span class="keyword">true
+    
+    func</span> request&lt;T&gt;(entityClass: <span class="type">T</span>.<span class="type">Type</span>, endpoint: <span class="type">String</span>, method: <span class="type">HTTPMethod</span>, success: <span class="keyword">@escaping</span> (<span class="type">T</span>) -&gt; <span class="type">Void</span>, failure: <span class="keyword">@escaping</span> (<span class="type">EError</span>) -&gt; <span class="type">Void</span>) <span class="keyword">where</span> <span class="type">T</span> : <span class="type">Decodable</span> {
+        <span class="keyword">self</span>.<span class="property">isRequestCalled</span> = <span class="keyword">true
+        
+        if</span> isSuccess {
+            <span class="call">success</span>([<span class="type">MovieEntity</span>(title: <span class="string">"Terminator"</span>, year: <span class="string">"1985"</span>, movieEntityDescription: <span class="string">""</span>, director: <span class="string">""</span>), <span class="type">MovieEntity</span>(title: <span class="string">"Terminator"</span>, year: <span class="string">"1985"</span>, movieEntityDescription: <span class="string">""</span>, director: <span class="string">""</span>), <span class="type">MovieEntity</span>(title: <span class="string">"Terminator"</span>, year: <span class="string">"1985"</span>, movieEntityDescription: <span class="string">""</span>, director: <span class="string">""</span>), <span class="type">MovieEntity</span>(title: <span class="string">"Terminator"</span>, year: <span class="string">"1985"</span>, movieEntityDescription: <span class="string">""</span>, director: <span class="string">""</span>)] <span class="keyword">as</span>! <span class="type">T</span>)
+        }
+    }
+}
+</code></pre><p>Como todos los mocks, añado dos flags, uno para indicar que he pasado por el método y otro para controlar si quiero testear cuando todo ha ido bien o cuando ha habido error. Y en el caso de <code>success</code> devuelvo un array mockeado de MovieEntity.</p><p>Ahora nos vamos a hacer el test, y este tiene una peculiaridad y es que tenemos que probar bloques. Para ello tenemos que hacer uso de <code>expectation</code>, que nos simula una llamada en otro hilo para hacer la espera a que se ejecute ese bloque. Podemos verlo en este código.</p><pre><code><span class="keyword">func</span> test_movieProvider_get_movies_when_is_success() {
+    <span class="comment">//GIVEN</span>
+    <span class="keyword">let</span> provider = <span class="type">MovieProviderImplementation</span>()
+    <span class="keyword">let</span> providerMock = <span class="type">ProviderMock</span>()
+    providerMock.<span class="property">isSuccess</span> = <span class="keyword">true</span>
+    provider.<span class="property">provider</span> = providerMock
+
+    <span class="keyword">let</span> expect = <span class="keyword">self</span>.<span class="call">expectation</span>(description: <span class="keyword">#function</span>)
+    
+    <span class="comment">//WHEN</span>
+    provider.<span class="call">getMovies</span> { (movies) <span class="keyword">in</span>
+        <span class="call">XCTAssertEqual</span>(movies.<span class="property">count</span>, <span class="number">4</span>)
+        expect.<span class="call">fulfill</span>()
+    } failure: { (error) <span class="keyword">in</span>
+        
+    }
+    
+    <span class="call">waitForExpectations</span>(timeout: <span class="number">1.0</span>) { error <span class="keyword">in</span>
+        <span class="call">XCTAssertNil</span>(error)
+        <span class="call">XCTAssertTrue</span>(providerMock.<span class="property">isRequestCalled</span>)
+    }
+}
+</code></pre><p>Estamos en primer lugar inicializando MovieProvider e inyectándole nuestro mock, indicándole que vamos a testear el bloque de success. En el bloque tenemos que llamar a <code>expect.fulfill()</code> y fuera de él añadimos un <code>watiForExpectations</code> con un timeout. De esta forma podemos probar que ese bloque se ejecuta correctamente y que devuelve lo que esperamos.</p><p>Si ejecutamos los tests vemos que, tras el tiempo que hemos indicado en el timeout, nos da error, ya que obviamente en nuestra implementación aún no estamos haciendo nada. Estamos en la fase roja, así que vamos a hacer esa implementación para pasar a verde.</p><pre><code><span class="keyword">func</span> getMovies(success: <span class="keyword">@escaping</span>([<span class="type">MovieEntity</span>]) -&gt; <span class="type">Void</span>, failure: <span class="keyword">@escaping</span>(<span class="type">EError</span>) -&gt; <span class="type">Void</span>) {
+    provider.<span class="call">request</span>(entityClass: [<span class="type">MovieEntity</span>].<span class="keyword">self</span>, endpoint: <span class="string">"http://demo8628160.mockable.io/movies"</span>, method: .<span class="dotAccess">get</span>) { (movies) <span class="keyword">in</span>
+        <span class="call">success</span>(movies)
+    } failure: { (error) <span class="keyword">in</span>
+        <span class="call">failure</span>(error)
+    }
+}
+</code></pre><p>Ya tenemos la implementación hecha, llamando a baseProvider y devolviendo nuestro listado de MovieEntity. Si ahora ejecutamos los tests vemos que pasamos al estado verde y ya los pasamos.</p><p>A partir de aquí entraríamos en la parte de refactorización, mejorando el código, eliminando posibles duplicidades y probando el resultado con datos reales.</p><p>Tiene muchas ventajas trabajar según la metodología TDD, pero uno de ellos es que cuando terminamos de desarrollar nuestra funcionalidad los tests ya están hechos, y no se nos "olvida" hacerlos.</p><p><a href="https://github.com/alfonsomiranda/Testing-in-swift/tree/tdd">Aquí</a> tenéis todo el código que hemos visto aquí por si quéreis trastear con él.</p></div></div></div><div class="footer pure-u-1"><div class="pure-u-1">© 2021 Alfonso Miranda</div><div class="pure-u-1">Generated using <a href="https://github.com/johnsundell/publish">Publish</a>. Written in Swift</div><div class="pure-u-1"><a href="/feed.rss">RSS feed</a></div></div></div></body></html>
