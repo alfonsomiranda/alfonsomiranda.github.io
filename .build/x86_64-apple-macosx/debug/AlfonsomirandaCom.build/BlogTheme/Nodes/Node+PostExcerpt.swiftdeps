@@ -45,7 +45,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "blog"]
 - !private ["s23CustomStringConvertibleP", "string"]
 - !private ["So15NSDateFormatterC", "blog"]
-- !private ["So15NSDateFormatterC", "date"]
 - !private ["So15NSDateFormatterC", "string"]
 - !private ["Se", "excerpt"]
 - ["4Plot14DocumentFormatP", "BodyContext"]
@@ -104,12 +103,8 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "section"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "tagList"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "text"]
-- ["So11NSFormatterC", ""]
 - !private ["So11NSFormatterC", "blog"]
-- !private ["So11NSFormatterC", "date"]
-- !private ["So11NSFormatterC", "dateFromString"]
 - !private ["So11NSFormatterC", "string"]
-- !private ["So11NSFormatterC", "stringFromDate"]
 - ["4Plot4HTMLV", "BodyContext"]
 - !private ["SH", "blog"]
 - !private ["SH", "date"]
@@ -129,30 +124,16 @@ depends-member:
 - !private ["7Publish8LocationP", "metadata"]
 - !private ["7Publish8LocationP", "path"]
 - !private ["7Publish8LocationP", "title"]
-- !private ["So8NSCodingP", ""]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "blog"]
-- !private ["So8NSCodingP", "date"]
-- !private ["So8NSCodingP", "dateFromString"]
 - !private ["So8NSCodingP", "string"]
-- !private ["So8NSCodingP", "stringFromDate"]
 - !private ["So9NSCopyingP", "blog"]
-- !private ["So9NSCopyingP", "date"]
-- !private ["So9NSCopyingP", "dateFromString"]
 - !private ["So9NSCopyingP", "string"]
-- !private ["So9NSCopyingP", "stringFromDate"]
-- ["So8NSObjectC", ""]
 - !private ["So8NSObjectC", "blog"]
-- !private ["So8NSObjectC", "date"]
-- !private ["So8NSObjectC", "dateFromString"]
 - !private ["So8NSObjectC", "string"]
-- !private ["So8NSObjectC", "stringForObjectValue"]
-- !private ["So8NSObjectC", "stringFromDate"]
+- ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "blog"]
-- !private ["So8NSObjectP", "date"]
-- !private ["So8NSObjectP", "dateFromString"]
 - !private ["So8NSObjectP", "string"]
-- !private ["So8NSObjectP", "stringForObjectValue"]
-- !private ["So8NSObjectP", "stringFromDate"]
 - ["4Plot4NodeO", "AlfonsomirandaCom"]
 - !private ["4Plot4NodeO", "DateFormatter"]
 - ["4Plot4NodeO", "HTML"]
@@ -204,16 +185,16 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "So11NSFormatterC"
+- !private "So11NSFormatterC"
 - "4Plot4HTMLV"
 - !private "SH"
 - !private "7Publish4ItemV"
 - !private "17AlfonsomirandaComAAV12ItemMetadataV"
 - !private "7Publish8LocationP"
-- !private "So8NSCodingP"
+- "So8NSCodingP"
 - !private "So9NSCopyingP"
-- "So8NSObjectC"
-- !private "So8NSObjectP"
+- !private "So8NSObjectC"
+- "So8NSObjectP"
 - "4Plot4NodeO"
 - "4Plot10RenderableP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"

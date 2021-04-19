@@ -55,8 +55,6 @@ depends-member:
 - ["4Plot4HTMLV", "BodyContext"]
 - !private ["7Publish8LocationP", "body"]
 - !private ["7Publish8LocationP", "title"]
-- ["So8NSCodingP", ""]
-- ["So8NSObjectP", ""]
 - ["4Plot4NodeO", "AlfonsomirandaCom"]
 - ["4Plot4NodeO", "HTML"]
 - ["4Plot4NodeO", "Node"]
@@ -90,8 +88,6 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "4Plot4HTMLV"
 - !private "7Publish8LocationP"
-- "So8NSCodingP"
-- "So8NSObjectP"
 - "4Plot4NodeO"
 - !private "7Publish4PageV"
 - "4Plot10RenderableP"

@@ -6,7 +6,7 @@ tags: remote, work
 excerpt: Hace unos días os comenté mis razones para trabajar en remoto. Para trabajar de esta forma es bueno que tanto tú como tu equipo sigáis unas buenas prácticas. He recopilado algunas que creo importantes y que algunas ya estoy aplicando en mi día a día y otras quiero ir añadiéndolas. Estas buenas prácticas no solo son necesarias si cada integrante del equipo está en su casa, si no cuando trabajamos con compañeros en otras oficinas, o incluso zonas separadas en la misma empresa.
 ---
 
-Hace unos días os comenté mis [razones para trabajar en remoto](https://alfonsomiranda.com/posts/2018-01-26-remote-work/). Para trabajar de esta forma es bueno que tanto tú como tu equipo sigáis unas buenas prácticas. He recopilado algunas que creo importantes y que algunas ya estoy aplicando en mi día a día y otras quiero ir añadiéndolas. Estas buenas prácticas no solo son necesarias si cada integrante del equipo está en su casa, si no cuando trabajamos con compañeros en otras oficinas, o incluso zonas separadas en la misma empresa.
+Hace unos días os comenté mis [razones para trabajar en remoto](https://alfonsomiranda.com/posts/why-working-in-remote/). Para trabajar de esta forma es bueno que tanto tú como tu equipo sigáis unas buenas prácticas. He recopilado algunas que creo importantes y que algunas ya estoy aplicando en mi día a día y otras quiero ir añadiéndolas. Estas buenas prácticas no solo son necesarias si cada integrante del equipo está en su casa, si no cuando trabajamos con compañeros en otras oficinas, o incluso zonas separadas en la misma empresa.
 
 # Comunicación.
 

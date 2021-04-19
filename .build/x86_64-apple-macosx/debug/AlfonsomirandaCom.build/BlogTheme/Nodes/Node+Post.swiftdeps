@@ -123,7 +123,7 @@ depends-member:
 - !private ["7Publish8LocationP", "date"]
 - !private ["7Publish8LocationP", "path"]
 - !private ["7Publish8LocationP", "title"]
-- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "blog"]
 - !private ["So8NSCodingP", "date"]
 - !private ["So8NSCodingP", "dateFromString"]
@@ -141,7 +141,6 @@ depends-member:
 - !private ["So8NSObjectC", "string"]
 - !private ["So8NSObjectC", "stringForObjectValue"]
 - !private ["So8NSObjectC", "stringFromDate"]
-- ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "blog"]
 - !private ["So8NSObjectP", "date"]
 - !private ["So8NSObjectP", "dateFromString"]
@@ -203,10 +202,10 @@ depends-nominal:
 - !private "SH"
 - !private "7Publish4ItemV"
 - !private "7Publish8LocationP"
-- "So8NSCodingP"
+- !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So8NSObjectC"
-- "So8NSObjectP"
+- !private "So8NSObjectP"
 - "4Plot4NodeO"
 - "4Plot10RenderableP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"

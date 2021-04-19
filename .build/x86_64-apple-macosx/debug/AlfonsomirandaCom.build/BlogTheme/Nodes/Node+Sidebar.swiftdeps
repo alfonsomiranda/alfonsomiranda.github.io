@@ -78,8 +78,6 @@ depends-member:
 - ["4Plot4HTMLV", "BodyContext"]
 - !private ["SH", ""]
 - !private ["17AlfonsomirandaComAAV12ItemMetadataV", ""]
-- !private ["So8NSCodingP", ""]
-- !private ["So8NSObjectP", ""]
 - ["4Plot4NodeO", "AlfonsomirandaCom"]
 - ["4Plot4NodeO", "HTML"]
 - ["4Plot4NodeO", "Node"]
@@ -130,8 +128,6 @@ depends-nominal:
 - "4Plot4HTMLV"
 - !private "SH"
 - !private "17AlfonsomirandaComAAV12ItemMetadataV"
-- !private "So8NSCodingP"
-- !private "So8NSObjectP"
 - "4Plot4NodeO"
 - !private "SY"
 - "4Plot10RenderableP"

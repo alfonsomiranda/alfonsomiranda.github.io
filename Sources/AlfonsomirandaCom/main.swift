@@ -23,6 +23,7 @@ struct AlfonsomirandaCom: Website {
     var language: Language { .spanish }
     var imagePath: Path? { nil }
     var socialMediaLinks: [SocialMediaLink] { [.linkedIn, .github, .twitter, .twitch] }
+    var favicon: Favicon? { .init(path: Path("images/favicon.ico"), type: "image/x-icon")}
 }
 
 // This will generate your website using the built-in Foundation theme:

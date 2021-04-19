@@ -11,26 +11,33 @@ depends-top-level:
 - "Node"
 - !private "StringLiteralType"
 depends-member:
+- ["4Plot7AnyNodeP", "HTML"]
 - !private ["4Plot7AnyNodeP", "class"]
 - !private ["4Plot7AnyNodeP", "div"]
 - !private ["4Plot7AnyNodeP", "group"]
 - ["4Plot14DocumentFormatP", "BodyContext"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "HTML"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "class"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "div"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "group"]
+- ["s32ExpressibleByStringInterpolationP", "HTML"]
 - !private ["s32ExpressibleByStringInterpolationP", "class"]
 - !private ["s32ExpressibleByStringInterpolationP", "div"]
 - !private ["s32ExpressibleByStringInterpolationP", "group"]
-- !private ["s26ExpressibleByStringLiteralP", ""]
+- ["s26ExpressibleByStringLiteralP", "HTML"]
+- ["s26ExpressibleByStringLiteralP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "class"]
 - !private ["s26ExpressibleByStringLiteralP", "div"]
 - !private ["s26ExpressibleByStringLiteralP", "group"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "HTML"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "class"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "div"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "group"]
 - ["4Plot4HTMLV", "BodyContext"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectP", ""]
 - ["4Plot4NodeO", "HTML"]
 - ["4Plot4NodeO", "Node"]
 - ["4Plot4NodeO", ""]
@@ -39,18 +46,21 @@ depends-member:
 - !private ["4Plot4NodeO", "group"]
 - ["4Plot4NodeO", "pageContent"]
 - ["4Plot10RenderableP", "BodyContext"]
+- ["4Plot10RenderableP", "HTML"]
 - !private ["4Plot10RenderableP", "class"]
 - !private ["4Plot10RenderableP", "div"]
 - !private ["4Plot10RenderableP", "group"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 depends-nominal:
-- !private "4Plot7AnyNodeP"
+- "4Plot7AnyNodeP"
 - "4Plot14DocumentFormatP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - "4Plot4HTMLV"
+- "So8NSCodingP"
+- "So8NSObjectP"
 - "4Plot4NodeO"
 - "4Plot10RenderableP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"

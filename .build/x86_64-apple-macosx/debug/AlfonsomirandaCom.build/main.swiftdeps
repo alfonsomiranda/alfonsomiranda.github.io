@@ -15,6 +15,7 @@ depends-top-level:
 - "AlfonsomirandaCom"
 - "Array"
 - "BooleanLiteralType"
+- "Favicon"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "Language"
@@ -29,6 +30,7 @@ depends-top-level:
 - !private "_findStringSwitchCase"
 - !private "~="
 depends-member:
+- ["17AlfonsomirandaComAAV", "Favicon"]
 - ["17AlfonsomirandaComAAV", "ItemMetadata"]
 - ["17AlfonsomirandaComAAV", "Language"]
 - ["17AlfonsomirandaComAAV", "Path"]
@@ -92,6 +94,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "=="]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "_rawHashValue"]
@@ -148,9 +151,13 @@ depends-member:
 - ["SQ", "stringValue"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s23ExpressibleByNilLiteralP", "init"]
 - ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
 - ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["7Publish7FaviconV", "init"]
 - ["SH", "=="]
 - ["SH", "AllCases"]
 - ["SH", "Default_AllCases"]
@@ -191,6 +198,7 @@ depends-member:
 - ["s25LosslessStringConvertibleP", ""]
 - ["So8NSCodingP", ""]
 - ["So8NSObjectP", ""]
+- !private ["Sq", "init"]
 - ["7Publish6PluginV", "splash"]
 - ["7Publish14PublishingStepV", "deploy"]
 - ["SY", "=="]
@@ -240,6 +248,7 @@ depends-member:
 - ["10Foundation3URLV", "init"]
 - ["4Plot16URLRepresentableP", "init"]
 - ["7Publish7WebsiteP", "ItemMetadata"]
+- !private ["7Publish7WebsiteP", "Path"]
 - ["7Publish7WebsiteP", "SectionID"]
 - ["7Publish7WebsiteP", "URL"]
 - ["7Publish7WebsiteP", "WebsiteItemMetadata"]
@@ -289,6 +298,7 @@ depends-nominal:
 - "Sl"
 - "SL"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "Se"
 - !private "s7DecoderP"
@@ -297,9 +307,11 @@ depends-nominal:
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "7Publish7FaviconV"
 - "SH"
 - !private "s6HasherV"
 - "17AlfonsomirandaComAAV12ItemMetadataV"
@@ -309,6 +321,7 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
 - "So8NSObjectP"
+- !private "Sq"
 - "7Publish6PluginV"
 - "7Publish14PublishingStepV"
 - "SY"
@@ -388,4 +401,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "aa5ce095a4324c5a197bc50a5105e9d8"
+interface-hash: "981fc553ed90233244b5507095bac48b"

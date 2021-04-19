@@ -40,7 +40,7 @@ extension SocialMediaLink {
     
     static var twitch: SocialMediaLink {
         return SocialMediaLink(
-            title: "Twitch", url: "https://www.twitch.tv/alfonsomiranda", icon: "fab fa-twitch"
+            title: "Twitch", url: "https://twitch.alfonsomiranda.com", icon: "fab fa-twitch"
         )
     }
 }

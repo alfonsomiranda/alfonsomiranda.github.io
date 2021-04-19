@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
 options: "f7ecfb42cd9a8536d9bec252ff0666dd"
-build_time: [1618219267, 938316000]
+build_time: [1618851699, 845341000]
 inputs:
   "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/ink/Sources/Ink/API/Markdown.swift": [1618219262, 318747754]
   "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/ink/Sources/Ink/API/MarkdownParser.swift": [1618219262, 381877056]

@@ -55,8 +55,8 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "postExcerpt"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "text"]
 - ["4Plot4HTMLV", "BodyContext"]
-- ["So8NSCodingP", ""]
-- ["So8NSObjectP", ""]
+- !private ["So8NSCodingP", ""]
+- !private ["So8NSObjectP", ""]
 - ["4Plot4NodeO", "AlfonsomirandaCom"]
 - ["4Plot4NodeO", "HTML"]
 - ["4Plot4NodeO", "Item"]
@@ -89,8 +89,8 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "4Plot4HTMLV"
-- "So8NSCodingP"
-- "So8NSObjectP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectP"
 - "4Plot4NodeO"
 - "4Plot10RenderableP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
