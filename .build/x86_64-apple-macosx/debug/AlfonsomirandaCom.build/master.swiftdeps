@@ -1,6 +1,6 @@
-version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
-options: "f81a93e8af403f49ec94cd7e51a0d1b0"
-build_time: [1618852171, 674722000]
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "65f16950259a3ec4e01cde8e24f66bf7"
+build_time: [1621410756, 435426000]
 inputs:
   "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/BlogDateFormatter.swift": [1592887668, 0]
   "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/BlogTheme/BlogHTMLFactory.swift": [1618169667, 410372972]

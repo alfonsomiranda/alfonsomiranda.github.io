@@ -1,6 +1,6 @@
-version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
-options: "8c4bfe87e99cfe16f08abb07a7aca250"
-build_time: [1618851699, 855357000]
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "0f32daffb0f51ea6776f0b4e683cd438"
+build_time: [1621410739, 3715000]
 inputs:
   "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/splash/Sources/Splash/Extensions/CharacterSet/CharacterSet+Contains.swift": [1618219258, 751229291]
   "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/splash/Sources/Splash/Extensions/Equatable/Equatable+AnyOf.swift": [1618219258, 751320373]

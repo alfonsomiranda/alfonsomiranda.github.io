@@ -1,5 +1,5 @@
-version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
-options: "54e47fe0191ed91f9cae363028c04c19"
-build_time: [1618851699, 854718000]
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "b28cc49fd78aec9bc2723570f6f3e7af"
+build_time: [1621410739, 1656000]
 inputs:
   "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/files/Sources/Files.swift": [1618219257, 797943943]
