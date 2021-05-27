@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "medium-to-markdown": "^0.0.3"
+  },
+  "devDependencies": {
+    "gulp-vapor": "^1.1.0"
   }
 }

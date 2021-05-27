@@ -18,9 +18,9 @@ targets:
   "SplashPublishPlugin-debug.module": ["<SplashPublishPlugin-debug.module>"]
   "Sweep-debug.module": ["<Sweep-debug.module>"]
   "ink-cli-debug.exe": ["<ink-cli-debug.exe>"]
-  "main": ["<AlfonsomirandaCom-debug.exe>","<AlfonsomirandaCom-debug.module>","<publish-cli-debug.exe>"]
+  "main": ["<AlfonsomirandaCom-debug.exe>","<AlfonsomirandaCom-debug.module>"]
   "publish-cli-debug.exe": ["<publish-cli-debug.exe>"]
-  "test": ["<AlfonsomirandaCom-debug.exe>","<AlfonsomirandaCom-debug.module>","<publish-cli-debug.exe>"]
+  "test": ["<AlfonsomirandaCom-debug.exe>","<AlfonsomirandaCom-debug.module>"]
 default: "main"
 nodes:
   "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/Sources/AlfonsomirandaCom/":
