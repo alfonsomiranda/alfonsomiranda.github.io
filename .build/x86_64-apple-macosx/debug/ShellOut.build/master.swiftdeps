@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
-options: "d40c2149612b2b15c9bc5404163f3e87"
-build_time: [1621410739, 9739000]
-inputs:
-  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/shellout/Sources/ShellOut.swift": [1618219263, 38738913]

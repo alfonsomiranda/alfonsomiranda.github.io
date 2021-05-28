@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
-options: "0e2a01075b3fad8ad6761b4fd75acdd9"
-build_time: [1621410738, 999225000]
-inputs:
-  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/sweep/Sources/Sweep/Sweep.swift": [1618219260, 351689321]

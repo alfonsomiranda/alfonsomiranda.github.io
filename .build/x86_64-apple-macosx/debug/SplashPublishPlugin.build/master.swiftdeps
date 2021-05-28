@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
-options: "89554840aacee3badd33dd9c413c31ef"
-build_time: [1621410756, 124509000]
-inputs:
-  "/Users/alfonsomiranda/Proyectos/Personal/personal_site/alfonsomiranda.github.com/.build/checkouts/splashpublishplugin/Sources/SplashPublishPlugin/SplashPublishPlugin.swift": [1618219260, 997546597]
