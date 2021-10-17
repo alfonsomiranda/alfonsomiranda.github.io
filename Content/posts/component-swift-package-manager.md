@@ -1,6 +1,6 @@
 ---
 title: Distribuir componentes con Swift Package Manager
-date: 2021-10-18 12:00
+date: 2021-10-17 13:30
 description: Swift Package Manager es una herramienta para controlar la distribución de código Swift en forma de librería o framework. Está integrada con el sistema de compliación de Swift para automatizar el proceso de descarga, compilación y dependencias.
 tags: swift, swift package manager, spm, framework, library
 excerpt: Swift Package Manager es una herramienta para controlar la distribución de código Swift en forma de librería o framework. Está integrada con el sistema de compliación de Swift para automatizar el proceso de descarga, compilación y dependencias.
@@ -55,7 +55,7 @@ final class MatrixTests: XCTestCase {
 
 Con este pequeño componente empezaremos a trabajar y lo subiremos a nuestro repositorio para ver como se puede distribuir por SPM. Hay que subir el proyecto a la raiz de nuestro repositorio para que lo podamos consumir o si no nos daría problemas.
 
-Una vez subido creamos un tag de la siguiente forma, por consola, que será la versión empaquetada de nuestro componente.
+Una vez subido creamos un tag por consola de la siguiente forma, que será la versión empaquetada de nuestro componente.
 
 ```
 git tag -a 1.0.0 -m "First version"
@@ -67,7 +67,7 @@ Y veremos en el repositorio que se ha creado y que ya tenemos una versión para 
 
 <img src="/images/spm/github-tag.png" alt="Github tag" width="800"/>
 
-Cada vez que queramos generar una nueva versión usaremos esta forma para que después, a través de Swift Package Manager, podamos especificarlo.
+Cada vez que queramos generar una nueva versión de nuestro componente usaremos esta forma para que después, a través de Swift Package Manager, podamos especificar y concretar con qué versión queremos trabajar, como veremos en el siguiente punto.
 
 Ya lo tendríamos todo preparado para distribuirlo y consumirlo, no necesitamos nada más, vamos a ver como lo hacemos desde otro proyecto cualquiera.
 
@@ -81,9 +81,9 @@ Y ponemos la url de nuestro repositorio, y veremos que aparece nuestro component
 
 <img src="/images/spm/configure-package.png" alt="Configure package" width="800"/>
 
-Por defecto la regla de dependencia la tenemos como que se actualice solo cuando haya una versión major, pero podemos cambiarlo a minor, una versión en concreto, un rango de versiones e incluso una rama o un commit. Yo lo voy a dejar a que se actualice cada nueva minor version.
+Por defecto la regla de dependencia la tenemos puesta para que que se actualice solo cuando haya una versión major, pero podemos cambiarlo a minor, a una versión en concreta, a un rango de versiones e incluso a una rama o un commit. Lo vamos a dejar para que se actualice con cada nueva `minor version`.
 
-Le damos a añadir el paquete y nos muestra los paquetes disponibles y lo seleccionamos.
+Le damos a añadir el paquete y nos muestra los disponibles y seleccionamos el único que hemos creado.
 
 <img src="/images/spm/select-package.png" alt="Select package" width="800"/>
 
