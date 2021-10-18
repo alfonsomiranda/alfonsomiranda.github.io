@@ -81,7 +81,7 @@ Y ponemos la url de nuestro repositorio, y veremos que aparece nuestro component
 
 <img src="/images/spm/configure-package.png" alt="Configure package" width="800"/>
 
-Por defecto la regla de dependencia la tenemos puesta para que que se actualice solo cuando haya una versión major, pero podemos cambiarlo a minor, a una versión en concreta, a un rango de versiones e incluso a una rama o un commit. Lo vamos a dejar para que se actualice con cada nueva `minor version`.
+Por defecto la regla de dependencia la tenemos puesta para que que se actualice solo cuando haya una versión major, pero podemos cambiarlo a minor, a una versión específica, a un rango de versiones e incluso a una rama o un commit. Lo vamos a dejar para que se actualice con cada nueva `minor version`.
 
 Le damos a añadir el paquete y nos muestra los disponibles y seleccionamos el único que hemos creado.
 
