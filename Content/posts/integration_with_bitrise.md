@@ -9,19 +9,19 @@ excerpt: Bitrise es una herramienta que nos facilita mucho la integración cont�
 
 # Creando un nuevo proyecto en bitrise
 
-En bitrise, después de crearnos nuestra cuenta, le damos a crear una nueva app y nos encontramos esto:
+Bitrise tiene diferentes planes, pero tiene uno para comenzar que es gratuito, así que nos podemos crear una cuenta para ir probándolo. Una vez creada empezamos a crear una nueva app y nos encontramos esto:
 
 <img src="/images/bitrise/new-project-bitrise.png" alt="New project bitrise" width="800"/>
 
-Yo ya tenía añadida mi cuenta de github y puedo navegar por mis repositorios, si tú aún no lo tienes sigue las instrucciones.
+En mi caso ya tenía añadida mi cuenta de github y puedo navegar por mis repositorios, si tú aún no lo tienes sigue las instrucciones que te indican en bitrise para hacerlo.
 
-Una vez seleccionado el repositorio, indicamos de qué rama queremos hacer la integración. En mi caso he elegido main y al darle a continuar empieza el proceso para configurarlo ... ¡y nos dará error!
+Para este artículo vamos a continuar con el proyecto que empezamos en el anterior, donde [distribuíamos un componente por Swift Package Manager](https://alfonsomiranda.com/posts/component-swift-package-manager/). Una vez seleccionado el repositorio, indicamos de qué rama queremos hacer la integración. En mi caso he elegido main y al darle a continuar empieza el proceso para configurarlo ... ¡y nos dará error!
 
 ¿Por qué?
 
-Porque nuestro proyecto no es un proyecto "Xcode" normal, no tenemos un ejecutable definido, un xcodeproj o ¿?, así que tenemos que hacerlo.
+Porque nuestro proyecto no es un proyecto "Xcode" normal, no tenemos un ejecutable definido, un xcodeproj o xcworkspace, así que tenemos que hacerlo.
 
-Nos vamos a donde está nuestro proyecto y por línea de comandos ejecutamos:
+Nos vamos a donde está nuestro proyecto y por línea de comandos ejecutamos lo siguiente:
 
 ```
 swift package generate-xcodeproj
@@ -32,26 +32,26 @@ Al abrirlo vamos a mirar los esquemas y quedarnos con el nombre, que será impor
 
 <img src="/images/bitrise/xcode-scheme.png" alt="Xcode scheme" width="800"/>
 
-Volvemos a bitrise y hacemos de nuevo la configuración, pero elegimos la forma manual porque me sigue fallando de forma automática (algún nombre de esquema o de proyecto que no pilla automáticamente), y habrá que toquetear algunas cosillas. En primer lugar elegimos iOS y añadimos el xcodeproj
+Subimos los cambios al repositorio, volvemos a bitrise y hacemos de nuevo la configuración, pero elegimos la forma manual porque sigue fallando de forma automática (algún nombre de esquema o de proyecto que no detecta automáticamente), y habrá que configurar algunas cosillas. En primer lugar elegimos iOS y añadimos el xcodeproj
 
 
 <img src="/images/bitrise/bitrise-project-configuration.png" alt="Bitrise project configuration" width="800"/>
 
-Volvemos a bitrise y hacemos de nuevo la configuración, pero elegimos la forma manual porque me sigue fallando de forma automática (algún nombre de esquema o de proyecto que no pilla automáticamente), y habrá que toquetear algunas cosillas. En primer lugar elegimos iOS y añadimos el xcodeproj
+E indicamos nuestro esquema.
 
 <img src="/images/bitrise/bitrise-scheme-configuration.png" alt="Bitrise scheme configuration" width="800"/>
 
-A continuación elegimos el método de distribución, en mi caso usaré development, pero podéis poner el que queráis, o modificarlo posteriormente. Y seleccionáis que máquina queréis usar.
+A continuación elegimos el método de distribución, en mi caso usaré development pero podéis poner el que queráis o modificarlo posteriormente. Y seleccionáis que máquina queréis usar.
 
 <img src="/images/bitrise/bitrise-configuration-xcode.png" alt="Bitrise xcode configuration" width="800"/>
 
-Confirmamos. Nos saltamos (si queremos) el paso de añadir el icono, y le damos a registrar un webhook, que nos añadirá a nuestro github el webhook necesario para que nos podamos comunicar con bitrise para la comprobación que haremos después. 
+Confirmamos. Nos saltamos (si queremos) el paso de añadir el icono, y le damos a registrar un webhook, que añadirá a nuestro github el webhook necesario para que nos podamos comunicar con bitrise para la comprobación que haremos después en cada pull request. 
 
-Le damos a finish y empezará a intentar ejecutar nuestro workflow. En mi caso al menos falla, porque no sé la razón, por defecto me pone un paso para cocoapods, cosa que no tengo (ni quiero tener), así que lo elimino.
+Le damos a finalizar y empezará a intentar ejecutar nuestro workflow. En mi caso al menos falla porque, no sé la razón, por defecto me pone un paso para cocoapods, cosa que no tengo (ni quiero tener), así que lo elimino.
 
 <img src="/images/bitrise/bitrise-error-workflow.png" alt="Bitrise error workflow" width="800"/>
 
-Y volvemos a ejecutar el workflow y se hace la magia!
+Y volvemos a ejecutar el workflow y ¡se hace la magia!
 
 Ahora vamos a integrar la comprobación de bitrise con la creación de una PR. La idea es que cuando alguien cree una nueva PR, a parte de otras validaciones necesarias (por ejemplo, un mínimo de aprobaciones por parte del equipo), sea obligatorio que nuestro workflow de bitrise pase sin errores. En bitrise ahora mismo solo tenemos añadido que el proyecto compile y que pase los tests, pero podemos añadir más cosas en el futuro.
 
@@ -63,7 +63,7 @@ y activamos la opción de "Enable Github checks".
 
 <img src="/images/bitrise/bitrise-enable-checks.png" alt="Bitrise enable checks" width="800"/>
 
-Si es la primera vez que lo hacemos en nuestro repositorio, primer será necesario instalar la app y dar permisos, como indica en el enlace bajo el checkbox.
+Si es la primera vez que lo hacemos en nuestro repositorio, primero será necesario instalar la app y dar permisos, como indica en el enlace bajo el checkbox.
 
 Una vez hecho ya estará preparado para hacer esas comprobaciones.
 
@@ -71,19 +71,21 @@ Una vez hecho ya estará preparado para hacer esas comprobaciones.
 
 Si nos vamos a nuestro workflow, en la parte de triggers de pull request, veremos que se nos ha añadido un nuevo lanzador que saltará cuando se haga un pull request de cualquier rama hacia cualquier rama. Esto lo podemos especificar para que solo sea a una en concreto (por ejemplo a la rama main) o definir más de uno para que dependiendo de la rama destino se ejecute diferentes acciones. Por ahora lo dejaremos así.
 
+<img src="/images/bitrise/bitrise-triggers.png" alt="Bitrise triggers" width="800"/>
+
 # Configurando el repositorio
 
 Ahora nos vamos a nuestro repositorio, a la configuración y vamos a la sección de branches
 
 <img src="/images/bitrise/github-activate-bitrise-check.png" alt="Github bitrise check" width="800"/>
 
-Vamos a añadir una nueva protección para nuestra rama principal, marcando "Add rule".
+Añadimos una nueva protección para nuestra rama principal, marcando "Add rule".
 
 Aquí marcamos los siguientes checkbox para nuestra rama main:
 
 <img src="/images/bitrise/github-branch-protection-rule.png" alt="Github branch protection rule" width="800"/>
 
-donde hemos marcado que sea necesario que pase nuestros status check, en nuestro caso bitrise. WEBHOOOKK!!!
+donde hemos seleccionado que sea necesario que pase nuestros status check, en nuestro caso bitrise.
 
 # Creando una nueva pull request
 
@@ -111,17 +113,15 @@ Y al crear la PR vemos que se empieza a ejecutar el check de Bitrise.
 
 Entrando en los detalles incluso podemos acceder directamente a la ejecución de bitrise para ver el progreso, que tardará unos minutillos.
 
-Cuando termina, oh! sorpresa! ha fallado.
+Cuando termina, ¡oh! ¡sorpresa! ... ha fallado.
 
 <img src="/images/bitrise/pull-request-fail.png" alt="Pull request fail" width="800"/>
 
-Entrando en los detalles incluso podemos acceder directamente a la ejecución de bitrise para ver el progreso, que tardará unos minutillos.
-
-Cuando termina, oh! sorpresa! ha fallado.
+Vamos a ir a los detalles a ver qué ha pasado.
 
 <img src="/images/bitrise/pull-request-fail-summary.png" alt="Pull request summary fails" width="800"/>
 
-Vemos que, obviamente, han fallado los test, ya que hemos cambiado la implementación pero no hemos actualizado los tests. Bitrise nos ha salvado de mergear a master (o main en el caso de github) una versión con los tests fallando ya que hemos subido sin probar que los pasaban (mal! muy mal!)
+Vemos que, obviamente, han fallado los test, ya que hemos cambiado la implementación pero no hemos actualizado los tests. Bitrise nos ha salvado de mergear a master (o main en el caso de github) una versión con los tests fallando ya que hemos subido sin probar que los tests funcionaban (¡mal! ¡muy mal!)
 
 Vamos a los test y los corregimos.
 
@@ -145,3 +145,5 @@ Y subimos a nuestra rama, que a su vez actualizará la PR y lanzará de nuevo bi
 Podemos ver un resumen de nuestro workflow en los detalles.
 
 <img src="/images/bitrise/pull-request-summary-success.png" alt="Pull request summary success" width="800"/>
+
+Y de esta forma tan sencilla hemos añadido un validador automático a nuestras pull requests, muy útiles para que los diferentes revisores de nuestro código no se tengan que preocupar de si los tests se están cumpliendo o de diferentes temas que se pueden hacer de forma automática. En futuros artículos añadiremos a nuestro workflow más pasos muy necesarios e importantes, como un validador de código `swiftlint` o que pase una comprobación más por Sonar. Pero esto ya será para otro día.
