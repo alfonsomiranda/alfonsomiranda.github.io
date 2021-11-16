@@ -1,0 +1,90 @@
+{
+  "main": {
+    "id": "c8557b0888a51c65",
+    "type": "split",
+    "children": [
+      {
+        "id": "4140296f46b8fcb2",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6458b2f8d060f850",
+    "type": "split",
+    "children": [
+      {
+        "id": "2428d06635860d42",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92fa77b1a3ddca8b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1fdb8a1265cd3d53",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "640a2b5b253497d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd3fbddfcce00bcf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4aa77790af6d826e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "4140296f46b8fcb2",
+  "lastOpenFiles": [
+    "borrar.md",
+    "clean-architecture-ios-viper.md"
+  ]
+}

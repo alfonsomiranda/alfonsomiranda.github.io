@@ -16,7 +16,7 @@ struct AlfonsomirandaCom: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "http://alfonsomiranda.com")!
+    var url = URL(string: "https://alfonsomiranda.com")!
     var title = "Alfonso Miranda"
     var name = "Alfonso Miranda"
     var description = "Mobile Software Engineer"
