@@ -1,6 +1,6 @@
 ---
 title: Validación de código con github y bitrise
-date: 2021-11-10 13:30
+date: 2021-11-16 20:00
 description: Bitrise es una herramienta que nos facilita mucho la integración contínua orientada a entornos de movilidad. Con ella podemos automatizar nuestra validación, compilación y distribución, entre otras muchas cosas. En este artículo nos vamos a centrar en como usar un flujo creado en bitrise para una validación automática previa en una revisión de código.
 tags: github, swift package manager, bitrise, ci, cd, integration continuous, pr, pull request
 excerpt: Bitrise es una herramienta que nos facilita mucho la integración contínua orientada a entornos de movilidad. Con ella podemos automatizar nuestra validación, compilación y distribución, entre otras muchas cosas. En este artículo nos vamos a centrar en como usar un flujo creado en bitrise para una validación automática previa en una revisión de código.
